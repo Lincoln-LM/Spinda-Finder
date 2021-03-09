@@ -1,9 +1,11 @@
-﻿using System;
+﻿using SpindaFinder.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -155,11 +157,13 @@ namespace Spinda
             var bitmap = new Bitmap(260, 295);
             using (var g = Graphics.FromImage(bitmap))
             {
-                var bmp1 = (Bitmap)Image.FromFile("spindapog" + shinyval + ".png");
-                var bmp2 = (Bitmap)Image.FromFile("spot1" + shinyval + ".png");
-                var bmp3 = (Bitmap)Image.FromFile("spot2" + shinyval + ".png");
-                var bmp4 = (Bitmap)Image.FromFile("spot3" + shinyval + ".png");
-                var bmp5 = (Bitmap)Image.FromFile("spot4" + shinyval + ".png");
+                ResourceManager rm = Resources.ResourceManager;
+
+                var bmp1 = (Bitmap)rm.GetObject("spindapog" + shinyval);
+                var bmp2 = (Bitmap)rm.GetObject("spot1" + shinyval);
+                var bmp3 = (Bitmap)rm.GetObject("spot2" + shinyval);
+                var bmp4 = (Bitmap)rm.GetObject("spot3" + shinyval);
+                var bmp5 = (Bitmap)rm.GetObject("spot4" + shinyval);
                 g.DrawImage(bmp1, 0, 0);
                 g.DrawImage(bmp2, spot1x * 5, spot1y * 5);
                 g.DrawImage(bmp3, spot2x * 5, spot2y * 5);
@@ -167,7 +171,7 @@ namespace Spinda
                 g.DrawImage(bmp5, spot4x * 5, spot4y * 5);
                 if (OverlayCheck.Checked)
                 {
-                    var bmp6 = (Bitmap)Image.FromFile("spindaoverlay" + shinyval + ".png");
+                    var bmp6 = (Bitmap)rm.GetObject("spindaoverlay" + shinyval);
                     g.DrawImage(bmp6, 0, 0);
                 }
 

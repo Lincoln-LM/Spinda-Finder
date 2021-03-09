@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B1F5091B-4629-4636-93C4-5EB20286B50B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Spinda</RootNamespace>
-    <AssemblyName>Spinda</AssemblyName>
+    <RootNamespace>SpindaFinder</RootNamespace>
+    <AssemblyName>SpindaFinder</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>spinda.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -99,6 +102,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spindaoverlay.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spindaoverlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spindaoverlayshiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spindapog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spindapogshiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spot1shiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spot2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spot2shiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spot3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spot3shiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spot4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\spot4shiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spindaoverlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spindaoverlayshiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spindapog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spindapogshiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spot1shiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spot2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spot2shiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spot3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spot3shiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spot4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spot4shiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="spinda.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
